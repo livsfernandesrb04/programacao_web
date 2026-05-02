@@ -1,0 +1,23 @@
+{
+  "name": "quit",
+  "version": "1.0.0",
+  "description": "Repositório de atividades da disciplina de Programação web",
+  "homepage": "https://github.com/livsfernandesrb04/programacao_web#readme",
+  "bugs": {
+    "url": "https://github.com/livsfernandesrb04/programacao_web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livsfernandesrb04/programacao_web.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
