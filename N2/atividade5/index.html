@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <form action="">
+        <form id="formulario-agendamento" action="/agendamento" method="post">
 
             <div class="row mt-3">
                 <div class="col-12">
@@ -60,10 +60,10 @@
                 <div class="col-6 mt-1">
                     <label for="clinica" class="form-label">Clínica</label>
                     <select list="clinicas" id="clinica" name="clinica" class="form-control">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="vittacore_instituto_de_saude">VittaCore Instituto de Saúde</option>
+                        <option value="Clínica Magnólia">Clínica Magnólia</option>
+                        <option value="Nexus Medicina Integrada">Nexus Medicina Integrada</option>
+                        <option value="Hospital Dia Dr. Arantes">Hospital Dia Dr. Arantes</option>
                     </select>
                 </div>
                 <div class="col-6 mt-1">
@@ -87,12 +87,11 @@
                 </div>
                 <div class="col-12 mt-1">
                     <label for="observacao" class="form-label">Observação</label>
-                    <input type="text" id="observacao" name="observacao" class="form-control">
+                    <textarea type="text" id="observacao" name="observacao" class="form-control"></textarea>
                 </div>
-                
-            </div>
-            <div class="col-12 mt-3">
-                <input type="button" value="Enviar"/>
+                <div class="d-flex justify-content-center gap-2 col-12 mx-auto mt-3 mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
             </div>
         </form>
     </div>
