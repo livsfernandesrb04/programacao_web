@@ -24,13 +24,20 @@ const AgendamentoConsulta = db.define('agendamento_consulta', {
         type: Sequelize.DATE,
         allowNull: false
     },
-    telefone: {
-        type: 
+    telefone: { //Verificar o formato 
+        type: Sequelize.STRING,
+        allowNull: false
     },
-    cep:"",
-    endereco:"",
+    cep: { //Verificar o formato
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    endereco: { 
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     clinica: {
-        type: Sequelize.DataTypes.TIME,
+        type: Sequelize.STRING,
         allowNull: false
     },
     especialidade:{

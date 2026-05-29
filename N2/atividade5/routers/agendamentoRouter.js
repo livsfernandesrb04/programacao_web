@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const agendamentoController = require('../controller/agendamentoController')
+const agendamentoController = require('../controller/agendamentoController');
+const usuarioController = require('../controller/usuarioController');
 
-router.get("/", agendamentoController.getIndex);
-router.get("/agendamentos", agendamentoController.getAgendamentos );
-router.post('/agendamento', )
+router.get("/", usuarioController.verificarAutenticacao,agendamentoController.getIndex);
+router.get("/agendamentos", usuarioController.verificarAutenticacao, agendamentoController.getAgendamentos);
+router.post("/agendamento", usuarioController.verificarAutenticacao, agendamentoController.postAgendamento);
+
+module.exports = router;
